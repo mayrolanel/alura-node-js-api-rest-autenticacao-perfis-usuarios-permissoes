@@ -20,6 +20,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'usuarios',
+    defaultScope: {
+      exclude: ['senha']
+    }
   });
   return usuarios;
 };
