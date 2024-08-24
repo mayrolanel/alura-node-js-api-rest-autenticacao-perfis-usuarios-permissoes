@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "postgres",
+    "username": "mayro",
     "password": "123456",
     "database": "seguranca_nodejs_development",
     "host": "127.0.0.1",
