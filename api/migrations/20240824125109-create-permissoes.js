@@ -2,7 +2,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('usuarios', {
+    await queryInterface.createTable('permissoes', {
       id: {
         allowNull: false,
         primaryKey: true,
@@ -12,10 +12,7 @@ module.exports = {
       nome: {
         type: Sequelize.STRING
       },
-      email: {
-        type: Sequelize.STRING
-      },
-      senha: {
+      descricao: {
         type: Sequelize.STRING
       },
       createdAt: {
@@ -29,6 +26,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('usuarios');
+    await queryInterface.dropTable('permissoes');
   }
 };
